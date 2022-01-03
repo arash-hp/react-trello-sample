@@ -1,0 +1,16 @@
+.root{
+    flex: 1;
+    position: relative;
+    .input{
+        width: 100%;
+        height: 24px;
+        padding-left: 25px;
+        border: none;
+    }
+    i{
+        position: absolute;
+        left: 5px;
+        top: 25%;
+        opacity: .5;
+    }
+}

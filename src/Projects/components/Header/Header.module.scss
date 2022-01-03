@@ -1,0 +1,15 @@
+.root {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-top: 26px;
+
+    .question {
+        opacity: 0.5;
+    }
+    .dropdown {
+        i {
+            padding-left: 5px;
+        }
+    }
+}

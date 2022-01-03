@@ -1,0 +1,28 @@
+.root{
+    background: rgba(212, 214, 221, 0.671);
+    overflow: hidden;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    gap: 32px;
+    
+}
+.sidebar{
+    min-width: 250px;
+    
+}
+.container{
+    overflow: auto;
+    flex: 1;  
+    display: flex;  
+    flex-direction: column;
+    // gap: 32px;
+    padding: 0 16px;
+}
+.header{
+
+}
+.content{
+    flex: 1;
+    
+}

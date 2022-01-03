@@ -1,0 +1,52 @@
+.root {
+    background: #fff;
+    border-radius: 16px;
+    margin: 8px 8px;
+    width: 268px;
+    padding: 4px 8px;
+    .title {
+        margin-top: -16px;
+        h4 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+        i {
+            opacity: 0.5;
+        }
+    }
+    p {
+        font-size: 14px;
+        opacity: 0.6;
+    }
+    figure {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4px;
+        span {
+            display: flex;
+            gap: 8px;
+            i:nth-child(1) {
+                color: red;
+            }
+            i {
+                color: green;
+                background: #fff;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                box-shadow: -1px 2px 5px 2px #f0f0f0;
+            }
+        }
+
+        img {
+            width: 40px;
+        }
+    }
+}
