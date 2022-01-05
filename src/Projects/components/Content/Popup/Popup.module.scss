@@ -5,7 +5,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    background: rgb(190, 213, 219);
+    background: rgb(167, 180, 182);
     padding: 16px 16px;
     border-radius: 16px;
     
@@ -33,9 +33,20 @@
                 border: none;
                 border-radius: 4px;
                 padding-left: 8px;
-                &::placeholder {
-                    opacity: 0.5;
+                &::placeholder{
                 }
+            }
+            textarea{
+                height: 30px;
+                border: none;
+                border-radius: 4px;
+                padding-left: 8px;
+            }
+            select{
+                height: 30px;
+                border: none;
+                border-radius: 4px;
+                padding-left: 8px;
             }
         }
     }

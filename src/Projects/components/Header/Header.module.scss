@@ -6,10 +6,15 @@
 
     .question {
         opacity: 0.5;
+        cursor: pointer;
     }
     .dropdown {
+        cursor: pointer;
         i {
             padding-left: 5px;
         }
+    }
+    i{
+        cursor: pointer;
     }
 }

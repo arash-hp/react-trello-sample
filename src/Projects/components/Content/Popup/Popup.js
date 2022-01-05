@@ -65,4 +65,3 @@ export class Popup extends Component {
         )
     }
 }
-<input placeholder=''></input>

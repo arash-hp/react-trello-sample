@@ -24,6 +24,7 @@ export default class Content extends Component {
     //         }
     //     ]
     // }
+
     constructor() {
         super()
         const item = localStorage.getItem('task');
@@ -41,7 +42,7 @@ export default class Content extends Component {
     onSubmit = (task) => {
         this.setState((prev) => {
             task.id = prev.tasks.length
-            task.startDate = new Date()
+            task.startDate = new Date().toLocaleDateString()
             return {
                 tasks: [task, ...prev.tasks],
                 modalOpen: false,
@@ -81,12 +82,9 @@ export default class Content extends Component {
                 return item.id === id ? task : item;
             })
         }, this.updateLocalStorage)
-
     }
 
     onDeleteCard = (id) => {
-        const task = this.state.tasks.find(item => item.id === id)
-        if (!task) { return }
         this.setState({
             tasks : this.state.tasks.filter((item) => {
                 return item.id !== id;
@@ -99,7 +97,6 @@ export default class Content extends Component {
     render() {
         const { className } = this.props;
         const { tasks, modalOpen, initialValues } = this.state;
-        console.log(this.state)
 
 
         return (
@@ -135,7 +132,9 @@ export default class Content extends Component {
                             onPrev={this.onPrevCard}
                             onDelete={this.onDeleteCard} />
                     </div>
+
                     {modalOpen && <Popup initialValues={initialValues} onSave={this.onSubmit} />}
+
                 </div>
             </div>
         )
